@@ -1,0 +1,24 @@
+# Unity Generated Files
+Library/
+Temp/
+Logs/
+Obj/
+Build/
+Builds/
+UserSettings/
+
+# Visual Studio / VS Code
+.vscode/
+*.csproj
+*.sln
+*.user
+
+# Ignore .meta files outside Assets
+!Assets/**/*.meta
+
+# Ignore packages cache
+Packages/*/package.json
+Packages/*/package-lock.json
+
+# Ignore Unity Collab
+Collab/
