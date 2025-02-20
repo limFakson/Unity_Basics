@@ -8,8 +8,8 @@ public class PlayerCollisionScript : MonoBehaviour
     {
         if(collision.collider.tag == "Obstacle")
         {
-            movement.rb.AddForce(0, 0, -200 * movement.speed / 2 * Time.deltaTime);
-            Debug.Log("Collision with obstacle");
+            movement.enabled = false;  // Disable the player movement
+            Object.FindFirstObjectByType<GameManager>().EndGame();           
         }
     }
 }

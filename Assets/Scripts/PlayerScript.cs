@@ -33,5 +33,10 @@ public class PlayerScript : MonoBehaviour
         // {
         //     rb.AddForce(0, 500 * speed * Time.deltaTime, 0);
         // }
+
+        if(rb.position.y < -1f)
+        {
+            Object.FindFirstObjectByType<GameManager>().EndGame();
+        }
     }
 }
