@@ -6,6 +6,13 @@ public class GameManager : MonoBehaviour
 
     bool gameHasEnd = false;
     public float restartSpeed = 1.5f;
+
+    public GameObject completeLevelUi;
+
+    public void CompleteLevel()
+    {
+        completeLevelUi.SetActive(true);
+    }
     public void EndGame()
     {
         if(gameHasEnd == false)
